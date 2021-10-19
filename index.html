@@ -1,0 +1,69 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/css/custom-style.css">
+  <style>
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+  .flex-container{
+    display: flex;
+    justify-content: center;
+  }
+  </style>
+</head>
+
+  <body>
+    <header id="header">
+      <center>
+      <img id="header-img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.emKg-ipQPoOORLlLutJK1QHaHa%26pid%3DApi&f=1">
+        <nav id="nav-bar">
+          <a class="#buy-on-automarin" href="buy-on-automarin">Buy On AutoMarin</a>
+          <a class="#buy-on-cargr"href="buy-on-cargr">Buy On CarGr</a>
+          <a class="#buy-on-x.e" href="buy-on-x.e">Buy On X.E</a>
+    </nav>
+    </header>
+  </center>
+    <section id="#buy-on-x.e">
+      <center>
+       <h1>Mercedes</h1>
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/HxUoIrQNIEc" title="Yo uTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </center>
+    </section>
+    <center>
+      <h2>Get 70% Off</h2>
+       <form id="form" action=""https://www.freecodecamp.com/email-submit>
+         <input id="email" type="email" placeholder="you@whatever.com" name="email"></input>
+         <input id="submit" type="submit"></input>
+       </form>
+     </center>
+    <section id="#buy-on-automarin">
+    </section>
+    <section id="#buy-on-cargr">
+    <div class="flex-container">
+     <div>Buy On AutoMarin</div>
+     <div>Buy on CarGr</div>
+     <div>Buy On X.E</div>
+    </div>
+    </section>
+  </body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script>
+console.log("Js Loaded");
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("header");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+   console.log("scroll triggered")
+  if (window.pageYOffset > sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+    </script>
+</html>
